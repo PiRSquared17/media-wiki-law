@@ -18,14 +18,13 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename      = "20120619 Media Wiki for law";
-$wgMetaNamespace = "20120619_Media_Wiki_for_law";
+$wgSitename      = "20120619madiawiki";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
 ## For more information on customizing the URLs please see:
 ## http://www.mediawiki.org/wiki/Manual:Short_URL
-$wgScriptPath       = "/20120619 media wiki for law books client/trunk";
+$wgScriptPath       = "/20120619mediawiki-1.19.1";
 $wgScriptExtension  = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
@@ -98,11 +97,11 @@ $wgShellLocale = "en_US.utf8";
 # Site language code, should be one of the list in ./languages/Names.php
 $wgLanguageCode = "zh-cn";
 
-$wgSecretKey = "eee64e1bfa34bdcdfe60ef2c78b1f1c38aadddc4651163df624467500b651447";
+$wgSecretKey = "e7786344fb0cfad4692fa1226ebae237982fac2a02a3981fe191d92d4976e08b";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "d2c929b1d6db95fd";
+$wgUpgradeKey = "8500e6f323297a2b";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
@@ -128,7 +127,6 @@ $wgResourceLoaderMaxQueryLength = -1;
 # The following permissions were set based on your choice in the installer
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['*']['edit'] = false;
-$wgGroupPermissions['*']['read'] = false;
 
 
 # End of automatically generated settings.
