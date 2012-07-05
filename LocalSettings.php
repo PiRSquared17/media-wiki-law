@@ -128,6 +128,7 @@ $wgResourceLoaderMaxQueryLength = -1;
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['*']['edit'] = false;
 
+$wgLogo = 'http://http://127.0.0.1/media-wiki-law/trunk\skins/common/images/wiki.png'；
 
 # End of automatically generated settings.
 # Add more configuration options below.
