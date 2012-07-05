@@ -43,7 +43,7 @@ $wgEnableEmail      = true;
 $wgEnableUserEmail  = true; # UPO
 
 $wgEmergencyContact = "apache@127.0.0.1";
-$wgPasswordSender   = "apache@127.0.0.1";
+$wgPasswordSender   = "1511586916@qq.com";
 
 $wgEnotifUserTalk      = false; # UPO
 $wgEnotifWatchlist     = false; # UPO
