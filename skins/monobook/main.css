@@ -551,7 +551,7 @@ div#footer li {
 	top: -2px; /* Bump it up just a tad */
 }
 #f-poweredbyico {
-	dispaly:none;
+	display:none;
 	float: right;
 	height: 1%;
 }
