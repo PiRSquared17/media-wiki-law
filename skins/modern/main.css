@@ -40,6 +40,7 @@ body {
 	font-size: 150%;
 }
 
+
 #p-personal {
 	position: absolute;
 	top: 2em;
@@ -247,7 +248,7 @@ ul {
 }
 
 #footer {
-
+	text-align:center ;
 	background-color: #f0f0f0;
 	/* @embed */
 	background: url(footer-grad.png) repeat-x 0 0;
