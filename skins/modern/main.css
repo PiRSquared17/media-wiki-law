@@ -247,7 +247,7 @@ ul {
 }
 
 #footer {
-	display:none;
+
 	background-color: #f0f0f0;
 	/* @embed */
 	background: url(footer-grad.png) repeat-x 0 0;
@@ -285,6 +285,7 @@ div.printfooter {
 }
 
 p {
+
 	margin: 1em 0 1em 0;
 }
 
@@ -294,6 +295,9 @@ hr {
 	background-color: #aaa;
 	border: 0;
 	margin: .2em 0 .2em 0;
+}
+#mw_poweredby{
+	display:none;
 }
 
 #contentSub {
