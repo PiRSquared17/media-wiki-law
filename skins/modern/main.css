@@ -247,7 +247,7 @@ ul {
 }
 
 #footer {
-	diaplay:none;
+	display:none;
 	background-color: #f0f0f0;
 	/* @embed */
 	background: url(footer-grad.png) repeat-x 0 0;
