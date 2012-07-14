@@ -545,11 +545,13 @@ div#footer li {
 	margin: 0 1.3em;
 }
 #f-poweredbyico, #f-copyrightico {
+	
 	margin: 0 8px;
 	position: relative;
 	top: -2px; /* Bump it up just a tad */
 }
 #f-poweredbyico {
+	dispaly:none;
 	float: right;
 	height: 1%;
 }
