@@ -18,8 +18,10 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename      = "law";
-$wgMetaNamespace = "Law";
+#$wgSitename      = "law";
+#$wgMetaNamespace = "Law";
+$wgSitename      = "规章内容管理系统";
+$wgMetaNamespace = "规章内容管理系统";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -106,7 +108,8 @@ $wgUpgradeKey = "af27ffb44cf6223a";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
-$wgDefaultSkin = "vector";
+#$wgDefaultSkin = "vector";
+$wgDefaultSkin = "cavendishmw";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
