@@ -1,0 +1,241 @@
+/*
+** MediaWiki 'cavendish' style sheet for CSS2/3-capable browsers.
+** Copyright Mozilla Foundation - http://www.mozilla.org/
+** License: GPL (http://www.gnu.org/copyleft/gpl.html)
+**
+** Loosely based on the monobook style by Gabriel Wicke
+*
+* Last modified on 2010/12/31 for Cavendish mod.
+*/
+
+
+/* Inherit styles from monobook */
+@import url("monobook.css");
+
+/* Try to use custom fonts trough CSS3 (opera 10+, safari 3.1+ and ff 3.5+) */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/* Load Cavendish specific styles */
+@import url("content.css");
+@import url("template.css");
+@import url("basetemplate.css");
+@import url("cavendish.css");
+
+#header ul
+{
+	margin: 0;
+	padding-right: 1em;
+}
+
+#header li
+{
+	padding: 0 6px 0 0;
+	margin-right: 1px;
+}
+
+#header ul li.selected a
+{
+	background-position: 0% -200px;
+	color: #455372;
+}
+
+#header ul li.selected
+{
+	background-position: 100% -200px;
+	border-bottom: 1px solid #fff;
+}
+
+	/* header tabs mouseover effects */
+	#header ul li.selected:hover a
+	{
+		background-position: 0% 0%;
+		color: #333;
+	}
+
+	#header ul li.selected:hover
+	{
+		background-position: 100% 0%;
+		border-bottom: 1px solid #fff;
+	}
+
+/*
+ * If you want the mozilla.org button on the top back, look for "mozilla-org"
+ * in CavendishMW.php and uncomment that line. Also uncomment this body
+ * part below.
+ **/
+/*body {
+	background: url("subsite_back.gif") repeat-x;
+	background-color: #FFF;
+	margin-top: 0;
+	padding-top: 0;
+}*/
+
+
+div#header { clear: both; }
+
+#header h1 a {
+    /*background: transparent url("wiki_header_logo.gif") no-repeat scroll 5px -5px; */
+    font-family: Ubuntu, "Trebuchet MS", Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 1.7em;
+    position: relative;
+    text-shadow: 1px 1px 2px #000;
+    text-indent: 1.7em;
+    text-transform: lowercase;
+    top: -3px;
+}
+
+#header h1 a:hover {
+    text-decoration: none;
+}
+
+#mozilla-org a {
+	float: right;
+	display: block;
+	text-indent: -5000em;
+	width: 110px;
+	height: 25px;
+	text-decoration: none;
+	background: url("subsite_mozilla-org.gif") no-repeat;
+	margin-bottom: 1.5em;
+}
+
+
+/*
+** classes for special content elements like town boxes
+** intended to be referenced directly from the wiki src
+*/
+
+/*
+** Diff rendering
+*/
+table.diff { background:white; }
+td.diff-otitle { background:#ffffff; }
+td.diff-ntitle { background:#ffffff; }
+td.diff-addedline {
+    background:#ccffcc;
+    font-size: smaller;
+}
+td.diff-deletedline {
+    background:#ffffaa;
+    font-size: smaller;
+}
+td.diff-context {
+    background:#eeeeee;
+    font-size: smaller;
+}
+
+span.diffchange { color: red; font-weight: bold; }
+
+
+/*
+** Structural Elements
+*/
+
+
+/*
+** the navigation portlet
+*/
+
+#p-nav {
+    position:relative;
+    z-index:3;
+}
+
+
+/*
+** WORKAROUNDS
+*/
+
+/* navbox container style */
+.navbox p
+{
+	text-align: left !important;
+}
+
+/* make font in tables smaller */
+td, th
+{
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/* make the list of references look smaller */
+ol.references
+{
+	font-size: 90% !important; /* default: 100% */
+	text-align: justify;
+}
+
+/*
+** This is an edited part from monobook. Removed the #bodyContent
+** parts, because this class is not present in cavendish.
+*/
+ul {
+	list-style-image: url(bullet-icon.png);
+}
+.portlet ul {
+	list-style-type: circle;
+	list-style-image: url(bullet-icon.png);
+}
+li#pt-userpage,
+li#pt-anonuserpage,
+li#pt-login {
+	background: url(user-icon.png) top left no-repeat;
+}
+
+a.external,
+a[href ^="gopher://"] {
+	background: url(external.png) center right no-repeat;
+	padding-right: 13px;
+}
+a[href ^="https://"],
+.link-https {
+	background: url(lock-icon.png) center right no-repeat;
+	padding-right: 16px;
+}
+a[href ^="mailto:"],
+.link-mailto {
+	background: url(mail-icon.png) center right no-repeat;
+	padding-right: 18px;
+}
+a[href ^="news://"] {
+	background: url(news-icon.png) center right no-repeat;
+	padding-right: 18px;
+}
+a[href ^="ftp://"],
+.link-ftp {
+	background: url(file-icon.png) center right no-repeat;
+	padding-right: 18px;
+}
+a[href ^="irc://"],
+a.extiw[href ^="irc://"],
+.link-irc {
+	background: url(discussionitem_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+a.external[href $=".ogg"], a.external[href $=".OGG"],
+a.external[href $=".mid"], a.external[href $=".MID"],
+a.external[href $=".midi"], a.external[href $=".MIDI"],
+a.external[href $=".mp3"], a.external[href $=".MP3"],
+a.external[href $=".wav"], a.external[href $=".WAV"],
+a.external[href $=".wma"], a.external[href $=".WMA"],
+.link-audio {
+	background: url("audio-icon.png") center right no-repeat;
+	padding-right: 13px;
+}
+a.external[href $=".ogm"], a.external[href $=".OGM"],
+a.external[href $=".avi"], a.external[href $=".AVI"],
+a.external[href $=".mpeg"], a.external[href $=".MPEG"],
+a.external[href $=".mpg"], a.external[href $=".MPG"],
+.link-video {
+	background: url("video-icon.png") center right no-repeat;
+	padding-right: 13px;
+}
+a.external[href $=".pdf"], a.external[href $=".PDF"],
+a.external[href *=".pdf#"], a.external[href *=".PDF#"],
+a.external[href *=".pdf?"], a.external[href *=".PDF?"],
+.link-document {
+	background: url("document.png") center right no-repeat;
+	padding-right: 12px;
+}
